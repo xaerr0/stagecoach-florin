@@ -42,11 +42,10 @@
 </header>
 
 <main>
-  <section class="section section-cream-2" style="padding-bottom:0;">
+  <section class="section section-cream-2" style="padding-bottom:36px;">
     <div class="wrap">
       <div class="menu-intro">
-        <span class="section-kicker">The Full Spread</span>
-        <h1>Menu</h1>
+        <h1>The Full Spread</h1>
         <p>Everything below is served all day, every day we're open. Pick a category to jump straight to it.</p>
       </div>
     </div>
@@ -55,17 +54,18 @@
   <section class="section section-cream" style="padding-top:36px;">
     <div class="wrap">
       <div class="menu-tabs" role="tablist" aria-label="Menu categories">
-        <button class="menu-tab" role="tab" data-id="specialties" aria-controls="panel-specialties" aria-selected="false">Chicken Fried Specialties</button>
-        <button class="menu-tab" role="tab" data-id="breakfast" aria-controls="panel-breakfast" aria-selected="false">Breakfast Entrees</button>
-        <button class="menu-tab" role="tab" data-id="griddle" aria-controls="panel-griddle" aria-selected="false">Griddle</button>
-        <button class="menu-tab" role="tab" data-id="omelets" aria-controls="panel-omelets" aria-selected="false">Omelets</button>
-        <button class="menu-tab" role="tab" data-id="burritos" aria-controls="panel-burritos" aria-selected="false">Burritos &amp; Gravy</button>
-        <button class="menu-tab" role="tab" data-id="sides" aria-controls="panel-sides" aria-selected="false">Sides &amp; Drinks</button>
-        <button class="menu-tab" role="tab" data-id="specials" aria-controls="panel-specials" aria-selected="false">Daily &amp; Weekend Specials</button>
+        <button class="menu-tab" id="tab-specialties" role="tab" data-id="specialties" aria-controls="panel-specialties" aria-selected="false">Chicken Fried Specialties</button>
+        <button class="menu-tab" id="tab-breakfast" role="tab" data-id="breakfast" aria-controls="panel-breakfast" aria-selected="false">Breakfast Entrees</button>
+        <button class="menu-tab" id="tab-griddle" role="tab" data-id="griddle" aria-controls="panel-griddle" aria-selected="false">Griddle</button>
+        <button class="menu-tab" id="tab-omelets" role="tab" data-id="omelets" aria-controls="panel-omelets" aria-selected="false">Omelets</button>
+        <button class="menu-tab" id="tab-burritos" role="tab" data-id="burritos" aria-controls="panel-burritos" aria-selected="false">Burritos &amp; Gravy</button>
+        <button class="menu-tab" id="tab-sides" role="tab" data-id="sides" aria-controls="panel-sides" aria-selected="false">Sides &amp; Drinks</button>
+        <button class="menu-tab" id="tab-specials" role="tab" data-id="specials" aria-controls="panel-specials" aria-selected="false">Daily &amp; Weekend Specials</button>
       </div>
 
       <!-- Chicken Fried Specialties -->
-      <div class="menu-panel" id="panel-specialties">
+      <div class="menu-panel" id="panel-specialties" role="tabpanel" aria-labelledby="tab-specialties" tabindex="0">
+        <h2 class="visually-hidden">Chicken Fried Specialties</h2>
         <p class="menu-note">Served with three fresh eggs, homemade country gravy, and your choice of a Partner #1 side (home fried potatoes, buttered grits, fried grits n' molasses, rice n' gravy, or fresh fruit, plus toast, drop biscuit, or blueberry muffin) or a Partner #2 (homemade waffle, French toast, or buttermilk pancakes). English muffin or sourdough bread add $0.25.</p>
         <div class="menu-group">
           <div class="menu-item"><div><div class="menu-item-name">Chicken Fried Beef Steak</div><div class="menu-item-desc">2&ndash;4 oz. steaks</div></div><div class="menu-item-price">$18.45</div></div>
@@ -76,7 +76,8 @@
       </div>
 
       <!-- Old School Breakfast Entrees -->
-      <div class="menu-panel" id="panel-breakfast">
+      <div class="menu-panel" id="panel-breakfast" role="tabpanel" aria-labelledby="tab-breakfast" tabindex="0">
+        <h2 class="visually-hidden">Breakfast Entrees</h2>
         <p class="menu-note">Served with choice of home fried potatoes, buttered grits, fried grits n' molasses, rice n' gravy, or fresh fruit, plus drop biscuit or blueberry muffin. English muffin or sourdough bread add $0.25.</p>
         <div class="menu-group">
           <h3>Old School Breakfast Entrees</h3>
@@ -117,7 +118,8 @@
       </div>
 
       <!-- Griddle -->
-      <div class="menu-panel" id="panel-griddle">
+      <div class="menu-panel" id="panel-griddle" role="tabpanel" aria-labelledby="tab-griddle" tabindex="0">
+        <h2 class="visually-hidden">Griddle</h2>
         <p class="menu-note">Served with whipped butter and maple syrup. Add strawberries and whipped cream to any griddle item for $2.95.</p>
         <div class="menu-group">
           <h3>Hot Off the Griddle</h3>
@@ -139,7 +141,8 @@
       </div>
 
       <!-- Omelets -->
-      <div class="menu-panel" id="panel-omelets">
+      <div class="menu-panel" id="panel-omelets" role="tabpanel" aria-labelledby="tab-omelets" tabindex="0">
+        <h2 class="visually-hidden">Omelets</h2>
         <p class="menu-note">All omelets served with your choice of side.</p>
         <div class="menu-group">
           <div class="menu-item"><div class="menu-item-name">Linguisa Sausage &amp; Cheddar</div><div class="menu-item-price">$16.95</div></div>
@@ -169,7 +172,8 @@
       </div>
 
       <!-- Burritos & Gravy -->
-      <div class="menu-panel" id="panel-burritos">
+      <div class="menu-panel" id="panel-burritos" role="tabpanel" aria-labelledby="tab-burritos" tabindex="0">
+        <h2 class="visually-hidden">Burritos &amp; Gravy</h2>
         <div class="menu-group">
           <h3>Breakfast Burritos</h3>
           <div class="menu-item"><div><div class="menu-item-name">Mexican Jumbo Burrito</div><div class="menu-item-desc">3 scrambled eggs, pork chorizo, green chilies, onion, bell pepper, jack cheese, fresh salsa; served with home fries</div></div><div class="menu-item-price">$15.95</div></div>
@@ -189,7 +193,8 @@
       </div>
 
       <!-- Sides & Drinks -->
-      <div class="menu-panel" id="panel-sides">
+      <div class="menu-panel" id="panel-sides" role="tabpanel" aria-labelledby="tab-sides" tabindex="0">
+        <h2 class="visually-hidden">Sides &amp; Drinks</h2>
         <div class="menu-group">
           <h3>Breakfast Side Orders</h3>
           <div class="menu-item"><div class="menu-item-name">Bacon Strips (4)</div><div class="menu-item-price">$6.95</div></div>
@@ -236,7 +241,8 @@
       </div>
 
       <!-- Daily & Weekend Specials -->
-      <div class="menu-panel" id="panel-specials">
+      <div class="menu-panel" id="panel-specials" role="tabpanel" aria-labelledby="tab-specials" tabindex="0">
+        <h2 class="visually-hidden">Daily &amp; Weekend Specials</h2>
         <div class="menu-group">
           <h3>Stagecoach Daily Specials</h3>
           <div class="menu-item"><div class="menu-item-name">1 lb Bone-In Ham Steak n' 4 Eggs</div><div class="menu-item-price">$20.95</div></div>
@@ -262,7 +268,7 @@
   <div class="wrap">
     <div class="footer-grid">
       <div>
-        <h4>Stage Coach Rules</h4>
+        <h3>Stage Coach Rules</h3>
         <ul class="footer-rules">
           <li>We accept Visa and Mastercard credit/debit cards only.</li>
           <li>We do not accept personal checks.</li>
@@ -271,7 +277,7 @@
         </ul>
       </div>
       <div class="footer-visit">
-        <h4>Visit</h4>
+        <h3>Visit</h3>
         <p>4365 Florin Road<br>Sacramento, CA 95823</p>
         <p><a href="tel:9164229296">(916) 422-9296</a></p>
         <p>Open Daily, 7am&ndash;3pm</p>
